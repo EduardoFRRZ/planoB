@@ -10,8 +10,14 @@
 // called when the client connects
 function connect() {
 
+  let conexao = document.getElementById('conexao');
+  let host = conexao.host.value;
+  let port = conexao.port.value;
+  console.log(host);
+  console.log(port);
+
   let broker = "test.mosquitto.org";
-  let port = 8080;
+  //let port = 8080;
   client = new Paho.MQTT.Client(broker, Number(port), "clientId");
   client.onConnectionLost = onConnectionLost;
   client.onMessageArrived = onMessageArrived;
