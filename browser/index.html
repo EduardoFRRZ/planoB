@@ -15,50 +15,55 @@
 
 	<body background="img/fundo.jpg">
 
-		<div class="container container_css">
-			<div align="center">
-				<h1 style="color: white;">Integração Software-Hardware</h1>
+		<div class="container">
+
+			<div align="center" class="borda_texto">
+				<h1>Integração Software-Hardware</h1>
 				<br>
 			</div>
 
-  			<div class="row">
+			<form name="conexao">
+	  			<div class="row">
+	  				<div class="col" align="center">
+	  					<input class="form-control" type="text" name="host" placeholder="Host">
+	  				</div>
 
-  				<div class="col" align="center">
-  					<input class="form-control" type="text" name="host" placeholder="Host">
-  				</div>
+	  				<div class="col" align="center">
+	  					<input class="form-control" type="text" name="port" placeholder="Port">
+	  				</div>
+	  			</div>
 
-  				<div class="col" align="center">
-  					<input class="form-control" type="text" name="host" placeholder="Port">
-  				</div>
+	  			<div class="row">
+	  				<div class="col">
+	  					<br><button type="button" class="btn btn-light btn-sm" onclick="connect()">... Conectar ...</button><br>
+	  				</div>	
+	  			</div>
+	  		</form>
 
-  			</div>
+			<div class="row padding">
 
-  			<div class="row">
-  				<div class="col">
-  					<br><button type="button" class="btn btn-light btn-sm">... Conectar ...</button><br>
-  				</div>	
-  			</div>
+				<div class="col">
 
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col col_css">
 					<h3 align="center">Escutar</h3>
 					<hr>
-					<input class="form-control" type="text" name="topico" placeholder="Topico">
-					<br><button type="button" class="btn btn-light btn-sm">... Escutar ...</button><br>
+					<form name="escutar">
+						<input class="form-control" type="text" name="topico" placeholder="Topico">
+						<br><button type="button" class="btn btn-light btn-sm">... Escutar ...</button><br>
+					</form>
 				</div>
 
-				<div class="col col_css">
+				<div class="col">
 					<h3 align="center">Enviar</h3>
 					<hr>
-					<input class="form-control" type="text" name="topico" placeholder="Topico">
-					<br>
-					<textarea rows="5" cols="66"></textarea>
-					<br><button type="button" class="btn btn-light btn-sm">... Escrever ...</button><br>
+					<form name="enviar">
+						<input class="form-control" type="text" name="topico" placeholder="Topico">
+						<br>
+						<textarea rows="5" cols="66"></textarea>
+						<br><button type="button" class="btn btn-light btn-sm">... Escrever ...</button><br>
+					</form>
 				</div>
 			</div>
+
 		</div>
 
 

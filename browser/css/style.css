@@ -1,11 +1,15 @@
-.container_css{
+.container{
 	margin: 50px;
 	padding: 50px;
-	background-color: #708090;
+	background-color: #FFFFFF;
 }
 
-.col_css{
-	margin: 20px;
-	padding: 50px;
-	background-color: #708090;
+.padding{
+	padding-top: 50px;
+}
+
+.borda_texto{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    font-size: 3em; color: #FFFFFF;
 }
